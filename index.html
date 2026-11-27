@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Bois de chauffage sec à 80 € le stère. Livraison dans la Communauté de communes du Pays d’Ancenis.">
+  <title>Augustin Courault — Bois de chauffage</title>
+  <style>
+    :root {
+      --forest: #263d2b;
+      --forest-light: #38573b;
+      --cream: #f7f3e9;
+      --wood: #bd7744;
+      --ink: #292a24;
+      --muted: #65665d;
+      --white: #fffefa;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--cream);
+      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 22px 7%;
+      color: var(--white);
+      background: var(--forest);
+    }
+
+    .brand {
+      margin: 0;
+      font-size: 1.05rem;
+      font-weight: 700;
+      letter-spacing: .04em;
+    }
+
+    main { overflow: hidden; }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap: 48px;
+      align-items: center;
+      max-width: 1180px;
+      min-height: 570px;
+      margin: auto;
+      padding: 72px 7%;
+    }
+
+    .eyebrow {
+      color: var(--forest-light);
+      font-size: .85rem;
+      font-weight: 800;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      max-width: 650px;
+      margin: 12px 0 18px;
+      color: var(--forest);
+      font-family: Georgia, serif;
+      font-size: clamp(2.7rem, 6vw, 5rem);
+      line-height: 1.04;
+    }
+
+    .intro {
+      max-width: 520px;
+      color: var(--muted);
+      font-size: 1.15rem;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 30px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 14px 22px;
+      border: 2px solid var(--forest);
+      border-radius: 6px;
+      color: var(--white);
+      background: var(--forest);
+      font-weight: 750;
+      text-decoration: none;
+    }
+
+    .button.secondary {
+      color: var(--forest);
+      background: transparent;
+    }
+
+    .button:hover { filter: brightness(1.12); }
+
+    .forest-photo {
+      width: 100%;
+      min-height: 340px;
+      border-radius: 18px;
+      object-fit: cover;
+      box-shadow: 0 20px 50px #263d2b14;
+    }
+
+    .details {
+      padding: 64px 7%;
+      background: var(--white);
+    }
+
+    .details-inner {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      max-width: 1050px;
+      margin: auto;
+    }
+
+    .card {
+      padding: 26px;
+      border: 1px solid #e8e4da;
+      border-radius: 12px;
+      background: var(--white);
+    }
+
+    .card h2 {
+      margin: 0 0 10px;
+      color: var(--forest);
+      font-family: Georgia, serif;
+      font-size: 1.35rem;
+    }
+
+    .price {
+      color: var(--wood);
+      font-size: 2rem;
+      font-weight: 850;
+    }
+
+    .contact {
+      padding: 64px 7%;
+      color: var(--white);
+      background: var(--forest);
+      text-align: center;
+    }
+
+    .contact h2 {
+      margin: 0 0 10px;
+      font-family: Georgia, serif;
+      font-size: clamp(2rem, 4vw, 3rem);
+    }
+
+    .contact p { color: #e4e9df; }
+
+    .contact .button {
+      margin-top: 12px;
+      border-color: var(--cream);
+      color: var(--forest);
+      background: var(--cream);
+    }
+
+    footer {
+      padding: 20px 7%;
+      color: #d6ddcf;
+      background: #1d3022;
+      font-size: .9rem;
+      text-align: center;
+    }
+
+    @media (max-width: 760px) {
+      .hero {
+        grid-template-columns: 1fr;
+        gap: 32px;
+        min-height: auto;
+        padding-top: 54px;
+        padding-bottom: 54px;
+      }
+
+      .forest-photo { min-height: 250px; }
+      .details-inner { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <p class="brand">AUGUSTIN COURAULT · BOIS DE CHAUFFAGE</p>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div>
+        <span class="eyebrow">Bois de chauffage · Pays d’Ancenis</span>
+        <h1>Un bon feu commence par du bois sec.</h1>
+        <p class="intro">
+          Bois sec pour votre chauffage, avec livraison dans la
+          Communauté de communes du Pays d’Ancenis.
+        </p>
+        <div class="actions">
+          <a class="button" href="tel:+33780355759">Appeler le 07 80 35 57 59</a>
+          <a class="button secondary" href="#infos">Voir les informations</a>
+        </div>
+      </div>
+
+      <img
+        class="forest-photo"
+        src="https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&amp;fit=crop&amp;w=1200&amp;q=85"
+        alt="Forêt verdoyante"
+      >
+    </section>
+
+    <section class="details" id="infos">
+      <div class="details-inner">
+        <article class="card">
+          <h2>Le bois</h2>
+          <p>Bois sec destiné au chauffage de votre maison.</p>
+        </article>
+
+        <article class="card">
+          <h2>Le prix</h2>
+          <p class="price">80 € <span style="font-size: 1rem;">/ stère</span></p>
+          <p>Contactez-moi pour vérifier la disponibilité.</p>
+        </article>
+
+        <article class="card">
+          <h2>La livraison</h2>
+          <p>Livraison dans la Communauté de communes du Pays d’Ancenis.</p>
+          <p>Frais de livraison à déterminer selon votre commune.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact">
+      <h2>Une question ou une commande ?</h2>
+      <p>Appelez Augustin Courault pour connaître les disponibilités et le tarif de livraison.</p>
+      <a class="button" href="tel:+33780355759">07 80 35 57 59</a>
+    </section>
+  </main>
+
+  <footer>
+    Augustin Courault · Bois de chauffage · Livraison dans le Pays d’Ancenis
+  </footer>
+</body>
+</html>
